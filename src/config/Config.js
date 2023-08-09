@@ -1,5 +1,4 @@
 const Config = {
-  API_KEY: "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",
   MODEL: "gpt-3.5-turbo",
   VERIFY_MODEL: "text-davinci-003",
   TEMPERATURE: 0.9,

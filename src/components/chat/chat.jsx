@@ -79,7 +79,6 @@ function Chat(username) {
         if (language) {
           ChatService.verifyMessage(input)
             .then((comments) => {
-              console.log(comments);
               const userMessage = {
                 role: "user",
                 content: input,
