@@ -1,0 +1,72 @@
+.chat-container {
+  height: 100%;
+  background-color: #f7f7f7;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.chat-messages {
+  max-height: 100%;
+  height: calc(100vh - 250px);
+  overflow-y: auto;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+  padding: 10px;
+  /* add padding to create some space between messages and the chat frame */
+  box-sizing: border-box;
+  /* ensure that padding is included in the height calculation */
+}
+
+.ai-message {
+  background-color: #f1f0f0;
+  color: #000;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: left;
+  max-width: 80%;
+  align-self: flex-start;
+}
+
+.user-message {
+  background-color: #c8e6c9;
+  padding: 5px;
+  border-radius: 10px;
+  margin-left: auto;
+  max-width: 70%;
+}
+
+.message {
+  margin-bottom: 10px;
+}
+
+.message-sender {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.chat-form {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+  height: 70px;
+  /* set the height to 70px */
+  padding: 10px;
+  /* add some padding to create space between the input box and the chat frame */
+  box-sizing: border-box;
+  /* ensure that padding is included in the height calculation */
+}
+
+.form form-control {
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  width: 80%;
+}
+
+.chat-form button[type="submit"] {
+  width: 70px;
+}
