@@ -9,7 +9,7 @@ const ChatMessage = ({ role, message, isAi, comments, language }) => {
     .toLowerCase()
     .normalize("NFD")
     .replace(/[\u0300-\u036f]/g, "")
-    .includes("no tenes errores");
+    .includes("no tienes errores");
 
   return (
     <Alert

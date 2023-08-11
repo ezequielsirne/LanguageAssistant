@@ -74,6 +74,7 @@ function Chat(username) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    setIsAiTyping(true);
     ChatService.verifyLanguage(input)
       .then((language) => {
         if (language) {
@@ -89,9 +90,9 @@ function Chat(username) {
               addMessage(userMessage);
               sendMessage(input);
               setInput("");
-              setIsAiTyping(true);
             })
             .catch((error) => {
+              setIsAiTyping(false);
               console.error(error);
             });
         } else {
@@ -112,10 +113,12 @@ function Chat(username) {
           };
           addMessage(aiMessage);
           setInput("");
+          setIsAiTyping(false);
         }
       })
       .catch((error) => {
         console.error(error);
+        setIsAiTyping(false);
       });
   };
 

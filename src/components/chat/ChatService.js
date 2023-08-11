@@ -81,7 +81,7 @@ const ChatService = {
           role: "user",
           content: `dime como está mi comunicación en ingles: 
       ${messageToVerify}.
-      Si no tiene errores, responde solamente: No tenés errores.
+      Si no tiene errores, responde solamente: No tienes errores.
       Si tiene errores:  responde el mensaje tiene errores y coloca su corrección.`,
         },
       ],
